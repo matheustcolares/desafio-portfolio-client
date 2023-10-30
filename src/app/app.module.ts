@@ -8,20 +8,25 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ToastrModule } from 'ngx-toastr';
 import { RegisterComponent } from './register/register.component';
-
+import { MaterialModule } from './material.module';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MenuComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MaterialModule,
+    FormsModule
 
   ],
   providers: [],

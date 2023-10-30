@@ -27,6 +27,6 @@ httpOptions = {
     return sessionStorage.getItem('id')!=null;
   }
   GetUserRole(){
-    return sessionStorage.getItem('role')!=null?sessionStorage.getItem("role")?.toString():'';
+    return sessionStorage.getItem('userRole')!=null?sessionStorage.getItem("userRole")?.toString():'';
   }
 }
