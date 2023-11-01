@@ -1,0 +1,7 @@
+<div *ngFor="let item of courseList">
+    <li  >{{item.name}}</li>
+    <div *ngFor="let dsc of disciplineList" >
+        <li *ngIf="item.id == dsc.course">{{dsc.name}}</li>
+        <li *ngIf="item.id == dsc.course">{{dsc.semester}}</li>
+    </div>
+</div>

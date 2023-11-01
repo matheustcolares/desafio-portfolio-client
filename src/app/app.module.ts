@@ -19,6 +19,7 @@ import { DisciplineComponent } from './discipline/discipline.component';
 import { CreatedisciplineComponent } from './creatediscipline/creatediscipline.component';
 import { UpdatedisciplineComponent } from './updatediscipline/updatediscipline.component';
 import { CreateuserComponent } from './createuser/createuser.component';
+import { GradeComponent } from './grade/grade.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { CreateuserComponent } from './createuser/createuser.component';
     CreatedisciplineComponent,
     UpdatedisciplineComponent,
     CreateuserComponent,
+    GradeComponent
   ],
   imports: [
     BrowserModule,
