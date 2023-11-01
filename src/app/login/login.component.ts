@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
 import { MatDialog } from '@angular/material/dialog';
 import { CreateuserComponent } from '../createuser/createuser.component';
+import { User } from '../interfaces/user';
+import { UserService } from 'src/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -15,8 +17,10 @@ export class LoginComponent {
   constructor(
     private loginService:LoginService,
     private router:Router,
-    private dialog:MatDialog){
+    private dialog:MatDialog,
+    private userService:UserService){
       sessionStorage.clear()
+      this.createUserAdmin()
     }
   credentials: Credentials = {
     Username:'',
@@ -52,5 +56,15 @@ export class LoginComponent {
       width:'50%',
       position: {right:'25%',left:'25%'},
     })
+  }
+  userAdmin:User={
+    id:1,
+    name :"administrator",
+    username:"admin",
+    password:"admin",
+    role:"3"
+  }
+  createUserAdmin(){
+    this.userService.save(this.userAdmin).subscribe(res=>{})
   }
 }
