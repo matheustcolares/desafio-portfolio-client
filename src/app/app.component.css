@@ -1,0 +1,24 @@
+.top-menu {
+    background-color: #2196F3; /* Azul */
+    color: #ffffff; /* Texto branco */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #0F4BA5; /* Azul mais escuro para a borda inferior */
+  }
+  
+  /* Estilo para os botões do menu */
+  button.mat-button {
+    background-color: #1976D2; /* Azul mais claro para os botões */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  /* Estilo para os botões do menu quando o mouse passa por cima */
+  button.mat-button:hover {
+    background-color: #0F4BA5; /* Azul mais escuro para os botões quando o mouse passa por cima */
+  }

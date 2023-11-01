@@ -15,8 +15,17 @@ import { User } from 'src/app/interfaces/user';
     save(user: User){
         return this.http.post(this.apiUrl+'/save',user);
     }
-    delete(id:string){
+    delete(id:number){
         return this.http.delete(this.apiUrl+'/delete/'+id);
     }
-
+    getRoles(){
+        return this.http.get(this.apiUrl+'/getRoles');
+    }
+    getById(id:number){
+        return this.http.get(this.apiUrl+'/find/'+id);
+    }
+    updateUser(user:User,id:number){
+        user.id =id;
+        return this.http.put(this.apiUrl+'/update',user)
+    }
   }

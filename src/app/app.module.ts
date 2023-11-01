@@ -10,6 +10,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { RegisterComponent } from './register/register.component';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
+import { CoursesComponent } from './courses/courses.component';
+import { CreatecourseComponent } from './createcourse/createcourse.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UpdatecourseComponent } from './updatecourse/updatecourse.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +24,10 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     HomeComponent,
     RegisterComponent,
-    
-   
+    UpdatepopupComponent,
+    CoursesComponent,
+    CreatecourseComponent,
+    UpdatecourseComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     ToastrModule.forRoot(),
     MaterialModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],

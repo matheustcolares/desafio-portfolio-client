@@ -1,9 +1,9 @@
 <div class="content" style="width:100%;display: block;" role="main">
-    <div *ngIf="ismenurequerid">
+    <div class="top-menu" *ngIf="ismenurequerid">
 
         <button mat-button  routerLink="register">Usuarios</button>
     
-        <button mat-button >Cursos</button>
+        <button mat-button routerLink="courses">Cursos</button>
     
         <button mat-button >Disciplina</button>
     
@@ -11,5 +11,7 @@
 
         <button mat-button routerLink="login">Logout</button>
     </div>
+    <div class="body-application">
 <router-outlet></router-outlet>
+</div>
 </div>
