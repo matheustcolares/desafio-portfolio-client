@@ -28,7 +28,6 @@ export class UpdatepopupComponent implements OnInit{
     
   }
 
-
   submitForm(user:any){
     return this.userService.updateUser(user.value,this.data.id).subscribe(res =>{
       this.user = res

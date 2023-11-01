@@ -15,6 +15,10 @@ import { CoursesComponent } from './courses/courses.component';
 import { CreatecourseComponent } from './createcourse/createcourse.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpdatecourseComponent } from './updatecourse/updatecourse.component';
+import { DisciplineComponent } from './discipline/discipline.component';
+import { CreatedisciplineComponent } from './creatediscipline/creatediscipline.component';
+import { UpdatedisciplineComponent } from './updatediscipline/updatediscipline.component';
+import { CreateuserComponent } from './createuser/createuser.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { UpdatecourseComponent } from './updatecourse/updatecourse.component';
     UpdatepopupComponent,
     CoursesComponent,
     CreatecourseComponent,
-    UpdatecourseComponent
+    UpdatecourseComponent,
+    DisciplineComponent,
+    CreatedisciplineComponent,
+    UpdatedisciplineComponent,
+    CreateuserComponent,
   ],
   imports: [
     BrowserModule,

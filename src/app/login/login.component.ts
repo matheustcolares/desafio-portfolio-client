@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Credentials } from '../interfaces/crendentials';
 import { LoginService } from 'src/services/login.service';
 import { Router } from '@angular/router';
+import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateuserComponent } from '../createuser/createuser.component';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +14,8 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   constructor(
     private loginService:LoginService,
-    private router:Router){
+    private router:Router,
+    private dialog:MatDialog){
       sessionStorage.clear()
     }
   credentials: Credentials = {
@@ -38,5 +42,15 @@ export class LoginComponent {
     }
       )
     
+  }
+
+  SaveUser(){
+    this.dialog.open(CreateuserComponent,{
+      panelClass: 'dialog',
+      enterAnimationDuration:'1000ms',
+      exitAnimationDuration:'500ms',
+      width:'50%',
+      position: {right:'25%',left:'25%'},
+    })
   }
 }
