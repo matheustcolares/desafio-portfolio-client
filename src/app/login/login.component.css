@@ -1,0 +1,46 @@
+/* Estilo para o contêiner principal */
+div {
+    background-color: #2196F3; /* Azul */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Estilo para o título "Login" */
+h1 {
+    font-size: 24px;
+    color: #000000; /* Texto preto */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os rótulos e campos de entrada */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo para os campos de entrada de texto */
+input {
+    width: 100%;
+    padding: 5;
+    margin-top: 5px;
+}
+
+/* Estilo para o botão de envio */
+button {
+    background-color: #1976D2; /* Azul mais escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Estilo para o botão de envio quando o mouse passa por cima */
+button:hover {
+    background-color: #0F4BA5; /* Azul mais escuro quando o mouse passa por cima */
+}

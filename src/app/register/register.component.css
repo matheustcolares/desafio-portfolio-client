@@ -1,0 +1,41 @@
+/* Estilo para o contêiner da tabela */
+.mat-elevation-z8 {
+  width: 100%;
+  background-color: #c9dae986; /* Azul */
+  color: #ffffff; /* Texto branco */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Estilo para o cabeçalho da tabela */
+.mat-header-cell {
+  background-color: #0F4BA5; /* Azul mais escuro para o cabeçalho */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estilo para as células da tabela */
+.mat-cell {
+  background-color: #1976D2; /* Azul mais claro para as células */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estilo para os botões dentro das células */
+button.mat-raised-button {
+  background-color: #1976D2; /* Azul mais claro para os botões */
+  color: #ffffff; /* Texto branco */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilo para os botões quando o mouse passa por cima */
+button.mat-raised-button:hover {
+  background-color: #0F4BA5; /* Azul mais escuro para os botões quando o mouse passa por cima */
+}
+::ng-deep .dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

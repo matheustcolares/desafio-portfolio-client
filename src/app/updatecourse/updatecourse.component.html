@@ -1,0 +1,16 @@
+<mat-card *ngIf="course">
+    <mat-card-title>Atualizar Usuario</mat-card-title>
+    <mat-card-content>
+      <form #courseForm="ngForm" (ngSubmit)="submitForm(courseForm)">
+        <mat-label>Nome:</mat-label>
+        <mat-form-field>
+          <input matInput type="text" name="name" ngModel [(ngModel)]="course.name" required>
+        </mat-form-field>
+        <mat-label>Quantidade de Semestres:</mat-label>
+        <mat-form-field>
+          <input matInput type="number" name="amount_semester" ngModel [(ngModel)]="course.amount_semester" required>
+        </mat-form-field>  
+        <button mat-raised-button mat-dialog-close color="primary" type="submit">Cadastrar</button>
+      </form>
+    </mat-card-content>
+  </mat-card>  

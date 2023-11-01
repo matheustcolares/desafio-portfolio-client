@@ -1,0 +1,14 @@
+<h1>Login</h1>
+<div>
+    <label for="new-hero">Login: </label>
+    <input id="new-hero" #username />
+    <label for="new-hero">Senha: </label>
+    <input id="new-hero" #password />
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="add-button" (click)="login(username.value,password.value);">
+    Login
+    </button>
+    <button type="button" class="add-button" (click)="SaveUser();">
+    Cadastro
+    </button>
+  </div>
