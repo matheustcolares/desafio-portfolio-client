@@ -1,11 +1,11 @@
 <div class="content" style="width:100%;display: block;" role="main">
     <div class="top-menu" *ngIf="ismenurequerid">
 
-        <button mat-button routerLink="register">Usuarios</button>
+        <button mat-button routerLink="register" *ngIf="canYouSeeThisFragment('Administrator')">Usuarios</button>
     
-        <button mat-button routerLink="courses">Cursos</button>
+        <button mat-button routerLink="courses" *ngIf="canYouSeeThisFragment('Administrator') || canYouSeeThisFragment('Coordinator')">Cursos</button>
     
-        <button mat-button routerLink="discipline" >Disciplina</button>
+        <button mat-button routerLink="discipline" *ngIf="canYouSeeThisFragment('Administrator') || canYouSeeThisFragment('Coordinator')" >Disciplina</button>
     
         <button mat-button>Matriz Curricular</button>
 

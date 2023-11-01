@@ -1,6 +1,7 @@
 import { Component, DoCheck } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { Router } from '@angular/router';
+import { LoginService } from 'src/services/login.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent implements DoCheck{
   title = 'desafio-portfolio-client';
   ismenurequerid=false
 
-constructor(private router:Router){}
+constructor(private router:Router,private loginService:LoginService){}
 
   ngDoCheck(): void {
     let currentUrl= this.router.url;
@@ -22,4 +23,12 @@ constructor(private router:Router){}
       this.ismenurequerid=true;
     }
 }
+  canYouSeeThisFragment(role:string){
+    if(this.loginService.GetUserRole() === role){
+      return true
+    }else{
+      return false
+    }
+
+  }
 }
